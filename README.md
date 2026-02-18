@@ -1,12 +1,12 @@
 <div align="center">
 
-  # Niladri Chatterjee's Portfolio 🚀
+# Muzzamil Hissan's Portfolio 🚀
 
-  [![Website](https://img.shields.io/website?label=Portfolio&style=for-the-badge&url=https%3A%2F%2Fniladri1.vercel.app)](https://niladri1.vercel.app)
-  [![GitHub followers](https://img.shields.io/github/followers/niladri-1?logo=github&style=for-the-badge)](https://github.com/niladri-1)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/niladri1)
-  [![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://niladri1.vercel.app)
-  [![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+[![Website](https://img.shields.io/website?label=Portfolio&style=for-the-badge&url=https%3A%2F%2Fniladri1.vercel.app)](https://niladri1.vercel.app)
+[![GitHub followers](https://img.shields.io/github/followers/niladri-1?logo=github&style=for-the-badge)](https://github.com/niladri-1)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/niladri1)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://niladri1.vercel.app)
+[![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 
   <p align="center">
     <img src="https://skillicons.dev/icons?i=react,nextjs,typescript,tailwind" alt="Tech Stack" />
@@ -14,7 +14,7 @@
 
   <h3>Full Stack Developer | MERN Specialist | Database Expert</h3>
 
-  [View Live Demo](https://niladri1.vercel.app) · [Report Bug](https://github.com/niladri-1/Software-Dev-Portfolio/issues) · [Request Feature](https://github.com/niladri-1/Software-Dev-Portfolio/issues)
+[View Live Demo](https://niladri1.vercel.app) · [Report Bug](https://github.com/niladri-1/Software-Dev-Portfolio/issues) · [Request Feature](https://github.com/niladri-1/Software-Dev-Portfolio/issues)
 
 </div>
 
@@ -26,16 +26,16 @@ A modern, responsive portfolio website showcasing my journey as a Full Stack Dev
 
 <div align="center">
 
-| Feature | Description |
-|---------|------------|
-| 🎨 Modern Design | Sleek dark theme with beautiful gradients |
-| 📱 Responsive | Optimized for all devices |
-| ⚡ Fast Performance | Optimized loading and rendering |
-| 🔍 Smart Search | Real-time search across portfolio |
-| 🎭 Animations | Smooth transitions with Framer Motion |
-| 📊 Analytics | Built-in performance monitoring |
-| 🔒 Security Headers | Enhanced security configurations |
-| 🤖 SEO Optimized | Search engine friendly structure |
+| Feature             | Description                               |
+| ------------------- | ----------------------------------------- |
+| 🎨 Modern Design    | Sleek dark theme with beautiful gradients |
+| 📱 Responsive       | Optimized for all devices                 |
+| ⚡ Fast Performance | Optimized loading and rendering           |
+| 🔍 Smart Search     | Real-time search across portfolio         |
+| 🎭 Animations       | Smooth transitions with Framer Motion     |
+| 📊 Analytics        | Built-in performance monitoring           |
+| 🔒 Security Headers | Enhanced security configurations          |
+| 🤖 SEO Optimized    | Search engine friendly structure          |
 
 </div>
 
@@ -43,12 +43,12 @@ A modern, responsive portfolio website showcasing my journey as a Full Stack Dev
 
 <div align="center">
 
-| Frontend | Backend | Database | Tools |
-|----------|---------|----------|-------|
-| Next.js | Node.js | MongoDB | VS Code |
-| React | Express | MySQL | Git |
-| TypeScript | REST API | NoSQL | Vercel |
-| Tailwind CSS | WebSocket | Redis | Docker |
+| Frontend     | Backend   | Database | Tools   |
+| ------------ | --------- | -------- | ------- |
+| Next.js      | Node.js   | MongoDB  | VS Code |
+| React        | Express   | MySQL    | Git     |
+| TypeScript   | REST API  | NoSQL    | Vercel  |
+| Tailwind CSS | WebSocket | Redis    | Docker  |
 
 </div>
 
@@ -80,15 +80,15 @@ npm run build
 
 <div align="center">
 
-| Section | Description |
-|---------|------------|
-| 🏠 Home | Welcome and introduction |
-| 👨‍💻 About | Professional background |
-| 📂 Projects | Development portfolio |
-| 💼 Experience | Work history |
-| 🎓 Education | Academic background |
+| Section         | Description                 |
+| --------------- | --------------------------- |
+| 🏠 Home         | Welcome and introduction    |
+| 👨‍💻 About        | Professional background     |
+| 📂 Projects     | Development portfolio       |
+| 💼 Experience   | Work history                |
+| 🎓 Education    | Academic background         |
 | 🏆 Certificates | Professional certifications |
-| 📞 Contact | Get in touch |
+| 📞 Contact      | Get in touch                |
 
 </div>
 
