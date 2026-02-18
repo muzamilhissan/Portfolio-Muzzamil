@@ -14,7 +14,7 @@ const Education = () => {
 			degree: "BS (Computer Science)",
 			// grade: "CGPA: 3.5",
 			image: "/education/college_img.jpg", 
-			resultUrl: "#",
+
 			coursework: [
 				"DSA",
 				"OOPs",
@@ -33,7 +33,7 @@ const Education = () => {
 			degree: "A Levels",
 			grade: "Grade: A",
 			image: "/education/school_img.jpg",
-			resultUrl: "#",
+
 			subjects: [
 				"Physics",
 				"Chemistry",
@@ -142,16 +142,7 @@ const Education = () => {
 										</div>
 									)}
 
-									<motion.a
-										href={edu.resultUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 rounded-lg transition-all text-sm font-medium"
-										whileHover={{ scale: 1.02 }}
-									>
-										View Result
-										<ExternalLink className="w-4 h-4" />
-									</motion.a>
+
 								</div>
 							</div>
 						</motion.div>
