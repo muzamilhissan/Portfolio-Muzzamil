@@ -56,7 +56,7 @@ A modern, responsive portfolio website showcasing my journey as a Full Stack Dev
 
 ```bash
 # Clone the repository
-git clone [https://github.com/niladri-1/Software-Dev-Portfolio.git](https://github.com/muzamilhissan/Portfolio-Muzzamil.git)
+git clone https://github.com/muzamilhissan/Portfolio-Muzzamil.git
 
 # Install dependencies
 npm install
