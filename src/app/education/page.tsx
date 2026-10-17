@@ -1,4 +1,4 @@
-import Education from '@/pages/Education';
+import Education from '@/views/Education';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

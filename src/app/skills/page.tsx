@@ -1,4 +1,4 @@
-import Skills from '@/pages/Skills';
+import Skills from '@/views/Skills';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

@@ -3,56 +3,26 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, Command, ArrowRight } from 'lucide-react';
+import { projects } from '@/data/projects';
+
+const pages = [
+	{ title: 'Home', description: 'Overview, featured work and contact', path: '/', keywords: ['home', 'cv', 'resume', 'portfolio', 'muzzamil', 'hissan', 'full stack engineer', 'software engineer'] },
+	{ title: 'About', description: 'Background and how I work', path: '/about', keywords: ['about', 'bio', 'profile', 'background'] },
+	{ title: 'Experience', description: 'Exitech, RippleBerry Tech, Arch Technologies', path: '/experience', keywords: ['experience', 'work', 'career', 'jobs', 'exitech', 'rippleberry', 'arch'] },
+	{ title: 'Projects', description: 'All production platforms', path: '/projects', keywords: ['projects', 'portfolio', 'work', 'saas'] },
+	{ title: 'Skills', description: 'Languages, frameworks, cloud and tooling', path: '/skills', keywords: ['skills', 'technologies', 'stack', 'react', 'next.js', 'node', 'postgres', 'docker'] },
+	{ title: 'Education', description: 'FAST NUCES and The City School', path: '/education', keywords: ['education', 'university', 'degree', 'fast', 'nuces'] },
+	{ title: 'Contact', description: 'Email, WhatsApp, LinkedIn', path: '/contact', keywords: ['contact', 'email', 'hire', 'whatsapp', 'message'] },
+];
 
 const searchData = [
-	{
-		title: 'Home',
-		description: 'Go to the welcome page',
-		path: '/',
-		keywords: ['home', 'cv', 'resume', 'start', 'welcome', 'portfolio', 'niladri', 'niladri chatterjee', 'niladri1', 'software developer', 'full stack developer', 'mern stack', 'web developer']
-	},
-	{
-		title: 'About',
-		description: 'Learn more about me and my background',
-		path: '/about',
-		keywords: ['about', 'background', 'education', 'bio', 'profile', 'cv', 'resume', 'niladri', 'chatterjee', 'full stack developer', 'software engineer', 'web developer']
-	},
-	{
-		title: 'Education',
-		description: 'View my educational background',
-		path: '/education',
-		keywords: ['education', 'university', 'college', 'degree', 'school', 'board', 'computer science', 'engineering', 'b.tech', 'bengal college']
-	},
-	{
-		title: 'Experience',
-		description: 'Check out my professional experience',
-		path: '/experience',
-		keywords: ['experience', 'work', 'career', 'jobs', 'professional', 'internships', 'certificates', 'mern', 'web developer', 'full stack', 'software developer']
-	},
-	{
-		title: 'Skills',
-		description: 'Explore my technical skills and expertise',
-		path: '/skills',
-		keywords: ['skills', 'technologies', 'programming', 'languages', 'frameworks', 'web', 'development', 'software', 'tools', 'react', 'node', 'javascript', 'typescript', 'next.js', 'mongodb', 'sql']
-	},
-	{
-		title: 'Projects',
-		description: 'View my portfolio of projects',
-		path: '/projects',
-		keywords: ['projects', 'portfolio', 'work', 'examples', 'github', 'code', 'open-source', 'web applications', 'full stack', 'mern stack', 'react', 'node']
-	},
-	{
-		title: 'Certificates',
-		description: 'View my certifications and achievements',
-		path: '/certificates',
-		keywords: ['certificates', 'certifications', 'achievements', 'courses', 'learning', 'skills', 'professional', 'development', 'awards', 'badges']
-	},
-	{
-		title: 'Contact',
-		description: 'Get in touch with me',
-		path: '/contact',
-		keywords: ['contact', 'email', 'message', 'connect', 'hire', 'freelance', 'work', 'collaboration', 'job', 'opportunity']
-	}
+	...pages,
+	...projects.map(p => ({
+		title: p.name,
+		description: p.tagline,
+		path: `/projects/${p.slug}`,
+		keywords: [p.name.toLowerCase(), p.category.toLowerCase(), p.org.toLowerCase(), ...p.tags.map(t => t.toLowerCase())],
+	})),
 ];
 
 const SearchDialog = () => {

@@ -1,4 +1,4 @@
-import Experience from '@/pages/Experience';
+import Experience from '@/views/Experience';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

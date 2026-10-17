@@ -14,11 +14,10 @@ const Navbar = () => {
 	const navLinks = [
 		{ path: '/', label: 'Home' },
 		{ path: '/about', label: 'About' },
-		{ path: '/education', label: 'Education' },
 		{ path: '/experience', label: 'Experience' },
-		{ path: '/skills', label: 'Skills' },
 		{ path: '/projects', label: 'Projects' },
-
+		{ path: '/skills', label: 'Skills' },
+		{ path: '/education', label: 'Education' },
 		{ path: '/contact', label: 'Contact' }
 	];
 
@@ -47,7 +46,7 @@ const Navbar = () => {
 								<Link
 									key={link.path}
 									href={link.path}
-									className={`nav-link ${pathname === link.path ? 'bg-white/15 backdrop-blur-sm' : ''}`}
+									className={`nav-link ${(link.path === '/' ? pathname === '/' : pathname?.startsWith(link.path)) ? 'bg-white/15 backdrop-blur-sm' : ''}`}
 								>
 									{link.label}
 								</Link>
