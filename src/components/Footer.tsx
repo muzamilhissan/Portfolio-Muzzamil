@@ -1,158 +1,60 @@
 'use client';
 
-
 import Link from 'next/link';
-import { Code2, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Code2, Github, Linkedin, Mail, MessageCircle } from 'lucide-react';
+import { profile } from '@/data/profile';
+import { projects } from '@/data/projects';
 
-const Footer = () => {
-	const currentYear = new Date().getFullYear();
+const pageLinks = [
+	{ name: 'About', path: '/about' },
+	{ name: 'Experience', path: '/experience' },
+	{ name: 'Projects', path: '/projects' },
+	{ name: 'Skills', path: '/skills' },
+	{ name: 'Education', path: '/education' },
+	{ name: 'Contact', path: '/contact' },
+];
 
-	const pageLinks = [
-		{ name: 'Home', path: '/' },
-		{ name: 'About', path: '/about' },
-		{ name: 'Education', path: '/education' },
-		{ name: 'Experience', path: '/experience' },
-		{ name: 'Skills', path: '/skills' },
-
-		{ name: 'Projects', path: '/projects' },
-		{ name: 'Contact', path: '/contact' }
-	];
-	// Split links into columns of 3
-	const column1 = pageLinks.slice(0, 3);
-	const column2 = pageLinks.slice(3, 6);
-	const column3 = pageLinks.slice(6, 8);
-
-	return (
-		<footer className="relative mt-24">
-			<div className="absolute inset-0 bg-black/50 backdrop-blur-xl" />
-
-			<div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<div className="grid grid-cols-1 md:grid-cols-4 gap-12 py-12">
-					{/* Branding */}
-					<div className="space-y-4">
-						<Link href="/" className="flex items-center space-x-3">
-							<Code2 className="w-8 h-8 text-white" />
-							<span className="text-xl font-bold text-white">Muzzamil Hissan</span>
-						</Link>
-						<p className="text-sm text-gray-400">
-							Software Developer.
-						</p>
-					</div>
-
-					{/* Contact */}
-					<div className="space-y-4">
-						<h3 className="text-sm font-semibold text-white">Contact</h3>
-						<ul className="space-y-3">
-							<li>
-								<a href="mailto:muzzamilhissan2@gmail.com" className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2">
-									<Mail className="w-4 h-4" />
-									muzzamilhissan2@gmail.com
-								</a>
-							</li>
-							<li>
-								<a
-									href="tel:+923048230247"
-									className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
-								>
-									<Phone className="w-4 h-4" />
-									+92 304 8230247
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					{/* Links - First Column */}
-					<div className="space-y-4">
-						<h3 className="text-sm font-semibold text-white">Quick Links</h3>
-						<div className="grid grid-cols-3 gap-x-6 gap-y-3">
-							{/* Column 1 */}
-							<div>
-								{column1.map(link => (
-									<Link
-										key={link.path}
-										href={link.path}
-										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
-									>
-										{link.name}
-									</Link>
-								))}
-							</div>
-							{/* Column 2 */}
-							<div>
-								{column2.map(link => (
-									<Link
-										key={link.path}
-										href={link.path}
-										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
-									>
-										{link.name}
-									</Link>
-								))}
-							</div>
-							{/* Column 3 */}
-							<div>
-								{column3.map(link => (
-									<Link
-										key={link.path}
-										href={link.path}
-										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
-									>
-										{link.name}
-									</Link>
-								))}
-							</div>
-						</div>
-					</div>
-
-					{/* Social */}
-					<div className="space-y-4">
-						<h3 className="text-sm font-semibold text-white">Social</h3>
-						<div className="flex space-x-4">
-							<a
-								href="https://github.com/muzamilhissan"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-gray-400 hover:text-white transition-colors"
-							>
-								<Github className="w-5 h-5" />
-							</a>
-							<a
-								href="https://www.linkedin.com/in/muzzamil-hissan-9b4862343/"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-gray-400 hover:text-white transition-colors"
-							>
-								<Linkedin className="w-5 h-5" />
-							</a>
-							<a
-								href="mailto:muzzamilhissan2@gmail.com"
-								className="text-gray-400 hover:text-white transition-colors"
-							>
-								<Mail className="w-5 h-5" />
-							</a>
-						</div>
+const Footer = () => (
+	<footer className="relative mt-24 border-t border-white/10">
+		<div className="absolute inset-0 bg-black/60 backdrop-blur-xl" />
+		<div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+			<div className="grid grid-cols-2 md:grid-cols-[1.5fr,1fr,1fr] gap-10 py-12">
+				<div className="col-span-2 md:col-span-1 space-y-4">
+					<Link href="/" className="flex items-center gap-3">
+						<Code2 className="w-7 h-7" />
+						<span className="text-lg font-bold">{profile.name}</span>
+					</Link>
+					<p className="text-sm text-gray-400 max-w-xs">{profile.role}. Shipping production SaaS end to end.</p>
+					<div className="flex gap-4 text-gray-400">
+						<a href={profile.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="GitHub"><Github className="w-5 h-5" /></a>
+						<a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="LinkedIn"><Linkedin className="w-5 h-5" /></a>
+						<a href={`https://wa.me/${profile.whatsapp}`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="WhatsApp"><MessageCircle className="w-5 h-5" /></a>
+						<a href={`mailto:${profile.email}`} className="hover:text-white transition-colors" aria-label="Email"><Mail className="w-5 h-5" /></a>
 					</div>
 				</div>
-
-				{/* Bottom bar */}
-				<div className="border-t border-white/10 py-6">
-					<div className="flex flex-col md:flex-row justify-between items-center">
-						<p className="text-sm text-gray-400">
-							© {currentYear} Muzzamil Hissan. All rights reserved.
-						</p>
-						<div className="flex space-x-6 mt-4 md:mt-0">
-							<a href="" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2">
-								<svg className="w-3 h-3" fill="currentColor" viewBox="0 0 32 32">
-									<path d="M12 1L24 22H0L12 1Z" />
-								</svg>
-								Muzzamil's Portfolio
-							</a>
-						</div>
-					</div>
+				<div>
+					<h3 className="text-sm font-semibold mb-4">Pages</h3>
+					<ul className="space-y-2.5">
+						{pageLinks.map(l => (
+							<li key={l.path}><Link href={l.path} className="text-sm text-gray-400 hover:text-white transition-colors">{l.name}</Link></li>
+						))}
+					</ul>
+				</div>
+				<div>
+					<h3 className="text-sm font-semibold mb-4">Projects</h3>
+					<ul className="space-y-2.5">
+						{projects.map(p => (
+							<li key={p.slug}><Link href={`/projects/${p.slug}`} className="text-sm text-gray-400 hover:text-white transition-colors">{p.name}</Link></li>
+						))}
+					</ul>
 				</div>
 			</div>
-		</footer>
-	);
-};
+			<div className="border-t border-white/10 py-6 flex flex-col sm:flex-row justify-between gap-2 text-sm text-gray-500">
+				<p>© {new Date().getFullYear()} {profile.name}</p>
+				<p>Built with Next.js, Tailwind CSS & Framer Motion</p>
+			</div>
+		</div>
+	</footer>
+);
 
 export default Footer;

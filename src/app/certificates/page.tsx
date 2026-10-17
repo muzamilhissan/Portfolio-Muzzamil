@@ -1,4 +1,4 @@
-import Certificates from '@/pages/Certificates';
+import Certificates from '@/views/Certificates';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

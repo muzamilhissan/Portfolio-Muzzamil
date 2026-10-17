@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import Background3D from '@/components/Background3D';
 import Navbar from '@/components/Navbar';
@@ -14,26 +14,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-	title: 'Muzzamil Hissan - Software Developer',
-	description: 'Muzzamil Hissan - Full Stack Developer specializing in modern web technologies. Expert in database development and web applications.',
-	keywords: 'Muzzamil Hissan, Muzzamil, Software Developer, Full Stack Developer, MERN Stack, Web Developer, React Developer, Next.js Expert, Database Developer, Frontend Specialist, Backend Developer, JavaScript Expert, TypeScript Developer, Node.js Developer, MongoDB Expert, SQL Developer',
+	title: 'Muzzamil Hissan — Full-Stack Engineer',
+	description: 'Muzzamil Hissan — Full-Stack & AI Automation Engineer shipping production SaaS end to end: PublisherOS, Zyrean, SehatDoc, SehatLab and more. Next.js, React, Node.js, PostgreSQL, OpenAI, Stripe, Docker.',
+	keywords: 'Muzzamil Hissan, Full-Stack Engineer, AI Automation Engineer, Next.js, React, Node.js, TypeScript, PostgreSQL, Supabase, Prisma, OpenAI, SaaS, Pakistan, Islamabad',
 	authors: [{ name: 'Muzzamil Hissan' }],
 	creator: 'Muzzamil Hissan',
 	manifest: '/manifest.json',
-	themeColor: '#000000',
-	viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
 		url: 'https://github.com/muzamilhissan',
-		title: 'Muzzamil Hissan - Full Stack Developer',
-		description: 'Full-stack developer specializing in modern web technologies.',
+		title: 'Muzzamil Hissan — Full-Stack Engineer',
+		description: 'Production SaaS, healthcare, ERP/CRM and AI platforms — built and owned end to end.',
 		siteName: 'Muzzamil Hissan Portfolio',
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Muzzamil Hissan - Full Stack Developer',
-		description: 'Full-stack developer specializing in modern web technologies.',
+		title: 'Muzzamil Hissan — Full-Stack Engineer',
+		description: 'Production SaaS, healthcare, ERP/CRM and AI platforms — built and owned end to end.',
 		creator: '@muzamilhissan',
 	},
 	robots: {
@@ -53,6 +51,13 @@ export const metadata: Metadata = {
 	verification: {
 		google: '/googlea4a36904e14398c1.html',
 	},
+};
+
+export const viewport: Viewport = {
+	themeColor: '#000000',
+	width: 'device-width',
+	initialScale: 1,
+	maximumScale: 5,
 };
 
 export default function RootLayout({

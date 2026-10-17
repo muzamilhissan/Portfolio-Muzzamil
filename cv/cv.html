@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Muzzamil Hissan — CV</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/font/Serif/cmun-serif.css">
+<style>
+	@page { size: Letter; margin: 0.4in 0.5in; }
+	* { box-sizing: border-box; }
+	body { font-family: 'Computer Modern Serif', 'CMU Serif', 'Latin Modern Roman', Georgia, serif; font-size: 9pt; line-height: 1.2; color: #000; margin: 0; }
+	h1 { font-variant: small-caps; font-weight: normal; font-size: 25pt; letter-spacing: 0.5px; text-align: center; margin: 0 0 2px; }
+	.contact { text-align: center; font-size: 9pt; margin-bottom: 6px; }
+	.contact a { color: inherit; text-decoration: none; }
+	h2 { font-variant: small-caps; font-weight: normal; font-size: 13pt; border-bottom: 0.6px solid #000; margin: 7px 0 3px; padding-bottom: 1px; }
+	.row { display: flex; justify-content: space-between; align-items: baseline; }
+	.org { font-weight: bold; font-size: 10.2pt; }
+	.sub { font-style: italic; font-size: 9pt; }
+	ul { margin: 1px 0 3px; padding-left: 22px; }
+	li { margin: 1px 0; list-style: none; position: relative; }
+	li::before { content: '–'; position: absolute; left: -12px; }
+	p { margin: 0; }
+	.entry { margin-bottom: 3px; break-inside: avoid; }
+	.skills div { margin: 1px 0; }
+	.skills b { font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Muzzamil Hissan</h1>
+<div class="contact">Islamabad, Pakistan<br>
+	<a href="mailto:muzzamilhissan2@gmail.com">muzzamilhissan2@gmail.com</a> | +92-304-8230247 |
+	<a href="https://www.linkedin.com/in/muzzamilhissan">linkedin.com/in/muzzamilhissan</a> |
+	<a href="https://github.com/muzamilhissan">github.com/muzamilhissan</a>
+</div>
+
+<h2>Summary</h2>
+<p>Full-Stack Engineer who ships production SaaS end to end — multi-tenant PostgreSQL schemas, typed REST and server-action APIs, React/Next.js interfaces, background job pipelines, payment and messaging integrations, LLM-driven automation, and the Docker/Nginx/Cloudflare infrastructure underneath. Sole technical owner of two live platforms at Exitech (an AI content &amp; SEO SaaS for publishers and an operations platform for a US services business) and builder of SehatDoc and SehatLab, healthcare products for clinics and diagnostic labs. Equally comfortable as the single technical point of contact — I run the client meetings, turn feedback into scoped roadmaps, and write the documentation the system runs on.</p>
+
+<h2>Experience</h2>
+<div class="entry">
+	<div class="row"><span class="org">Exitech</span><span>Islamabad, Pakistan (Remote)</span></div>
+	<div class="row sub"><span>Full-Stack Engineer &amp; AI Automation Engineer</span><span>Jul 2026 – Oct 2026</span></div>
+	<ul>
+		<li>Sole engineer and <b>client-facing technical owner</b> of two production SaaS platforms — <b>PublisherOS</b> (multi-tenant AI content &amp; SEO platform) and <b>Zyrean</b> (operations platform for a US services business): ran the requirement and milestone meetings, delivered <b>5 milestones</b> with sign-off evidence, and authored the architecture and deployment documentation both platforms run on.</li>
+		<li>Designed a multi-tenant <b>Supabase/PostgreSQL</b> architecture with <b>222 versioned migrations</b> and <b>Row Level Security</b> per organization, verified by an automated RLS/trigger suite run against production before each release.</li>
+		<li>Built an <b>AI content generation engine</b> on the <b>OpenAI API</b> — outline planning, sectioned drafting, competitor analysis, and a <b>RAG research agent</b> — behind a <b>35+ handler background worker pipeline</b> with retry, timeout, and idempotency contracts under test.</li>
+		<li>Architected Zyrean as a server-first <b>Next.js 16 / React 19</b> app on <b>Prisma 7</b> with <b>77 data models</b> and <b>9 state machines</b>, delivering the full money path: <b>Authorize.Net</b> payments, refunds, settlement, commissions, and payout batching.</li>
+		<li>Integrated <b>Stripe</b>, the <b>SEMrush API</b>, <b>WordPress REST</b>, <b>Google Analytics</b>, and <b>Twilio SMS</b>, and owned the infrastructure — <b>Docker</b>, <b>Nginx</b> with TLS, <b>Cloudflare</b> DNS/CDN/SSL, <b>Coolify/DigitalOcean</b>, and <b>40+ regression suites</b> with Playwright.</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="row"><span class="org">RippleBerry Tech</span><span>Islamabad, Pakistan</span></div>
+	<div class="row sub"><span>Full-Stack Engineer</span><span>Jan 2026 – Jul 2026</span></div>
+	<ul>
+		<li>Architected and developed full-stack web applications — including <b>ERP and CRM platforms</b> (LuxeLinen ERP, Kudon CRM) — using React, Next.js, TypeScript, Node.js, and PostgreSQL.</li>
+		<li>Delivered core <b>ERP and CRM modules</b>: inventory and sales per branch, invoicing and PDF receipts, lead and sales pipelines, role-based access control, and reporting dashboards for operations teams.</li>
+		<li>Built and maintained <b>Laravel (PHP)</b> backend services — MVC architecture, Eloquent ORM models and migrations, middleware, queued jobs, and Blade templating — against MySQL databases.</li>
+		<li>Integrated <b>Daily.co</b> for real-time in-app video calling — room provisioning, secure meeting tokens, scheduled sessions, participant controls, and call recording.</li>
+		<li>Designed robust REST APIs across Node.js and Laravel stacks, engineered responsive UIs from Figma designs, and managed end-to-end deployments through modern CI/CD pipelines.</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="row"><span class="org">Arch Technologies</span><span>Remote</span></div>
+	<div class="row sub"><span>AI Engineer</span><span>Jan 2024 – Mar 2024</span></div>
+	<ul>
+		<li>Architected and deployed Retrieval-Augmented Generation (RAG) pipelines using LangChain and OpenAI APIs.</li>
+		<li>Fine-tuned Large Language Models (LLMs) to improve domain-specific accuracy and context retention.</li>
+		<li>Developed <b>machine learning</b> models end to end — data preprocessing, feature engineering, training, hyperparameter tuning, and evaluation against held-out benchmarks.</li>
+		<li>Designed and managed the <b>database systems</b> behind the ML pipelines and optimized secure, scalable model deployments using Docker and AWS.</li>
+	</ul>
+</div>
+
+<h2>Selected Projects</h2>
+<div class="entry">
+	<div class="org">PublisherOS — Multi-Tenant AI Content &amp; SEO SaaS</div>
+	<div class="sub">React 19, Vite, Node 22, Express 5, TypeScript, Supabase/PostgreSQL, OpenAI, Stripe</div>
+	<ul>
+		<li>Multi-tenant publisher workspace for planning, AI-generating, reviewing, and publishing content to client WordPress sites, with billing, plans, AI metering, analytics, client approvals, and platform admin around it.</li>
+		<li>Typed npm-workspaces monorepo (frontend / backend / shared zod schemas) with TanStack Query, React Router 7, Tailwind 4, and a repository–service–route layering rule enforced across 80+ API modules.</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="org">Zyrean — Operations Platform (Customer / Business / Partner OS)</div>
+	<div class="sub">Next.js 16, React 19, Prisma 7, PostgreSQL, Supabase Auth, Authorize.Net, Twilio</div>
+	<ul>
+		<li>Server-first operations platform covering inquiries, quotes, bookings, specialist assignment, payments, commissions, payouts, support tickets, and audit history across three connected operating layers sharing one canonical data core.</li>
+		<li>Role-based access over Supabase Auth with middleware session handling, Supabase Storage uploads, timezone-correct scheduling, and PDF/Excel invoice and reporting exports (jsPDF, SheetJS).</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="org">SehatDoc — Clinic &amp; Practice Management Platform</div>
+	<div class="sub">Next.js 16, React 19, Node.js, Express 5, Prisma, PostgreSQL, WebSockets, AWS S3, .NET 8 / Avalonia, DigitalOcean, PM2</div>
+	<ul>
+		<li>Cloud platform for doctors, receptionists, and pharmacy staff — patients/EMR, appointments and live queue, prescriptions with QR verification, billing and installments, pharmacy POS and inventory, staff/HR, and WhatsApp reminders.</li>
+		<li>Five apps (portal, admin, booking directory, marketing, API) with ~345 endpoints and 80 Prisma models, deployed on DigitalOcean behind Nginx and Cloudflare with PM2, plus a native Windows client in .NET 8 / Avalonia.</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="org">SehatLab — Laboratory Information System</div>
+	<div class="sub">Node.js, REST APIs, webhooks, SehatDoc integration</div>
+	<ul>
+		<li>Cloud LIS for diagnostic labs — request intake and sample log, configurable test panels, two-stage result verification, branded report templates, and billing.</li>
+		<li>Built the clinic ↔ lab integration: connection handshake with origin allow-list and platform keys, test ordering from the lab catalogue, and verified reports synced straight into the doctor’s SehatDoc portal.</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="org">LuxeLinen ERP — Multi-Branch Retail ERP</div>
+	<div class="sub">React 19, TypeScript, Vite, TanStack Query, Node 20, Express, TypeORM, PostgreSQL, AWS S3</div>
+	<ul>
+		<li>ERP for a multi-branch luxury linen retailer — users, roles and permission matrix, branches, clients, branch sales with Excel import and PDF receipts, expenses, and branch performance dashboards.</li>
+		<li>JWT access/refresh tokens with rotation and revocation, S3 branch-logo uploads, ~36 REST endpoints over 15 TypeORM entities and 14 migrations.</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="org">Kudon CRM (KES) — Sales &amp; Lead Management</div>
+	<div class="sub">React 19, TypeScript, Vite, TanStack Query, Tailwind 4, Laravel API</div>
+	<ul>
+		<li>Lead-to-deal-to-purchase-order CRM for an engineering company with Kanban and table pipelines, AI-generated proposals, documents, and two-way SSO with the company’s POMS system; reduced lead tracking time by 20% across 10,000+ records.</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="org">KnowFlow — Mentorship Marketplace</div>
+	<div class="sub">React 19, Redux Toolkit / RTK Query, Socket.io, Stripe Connect, Daily.co, Zoom SDK, Node.js</div>
+	<ul>
+		<li>Two-sided marketplace connecting knowledge seekers with expert guides — timezone-aware booking, in-app video sessions, real-time chat over Socket.io, Stripe payments, wallets, and Stripe Connect payouts, plus an admin back office.</li>
+	</ul>
+</div>
+<div class="entry">
+	<div class="org">Voxel Patient Portal — Medical File Transfer</div>
+	<div class="sub">React 19, TypeScript, Vite, Tailwind 4, Laravel Sanctum</div>
+	<ul>
+		<li>Secure portal for non-DICOM patient documents — Sanctum auth with email-OTP 2FA, patient records, drag-and-drop document folders by type, and Admin / Staff / Auditor role management.</li>
+	</ul>
+</div>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+	<div><b>Languages:</b> TypeScript, JavaScript (ES2023+), PHP, SQL, Python, HTML5, CSS3</div>
+	<div><b>Frontend:</b> React 19, Next.js 16 (App Router, Server Components, Server Actions), Vite, React Router, TanStack Query, Redux Toolkit, Tailwind CSS v4, Radix UI, shadcn/ui, React Hook Form, Zod, Figma-to-code</div>
+	<div><b>Backend:</b> Node.js 22, Express 5, NestJS, Laravel (PHP), Prisma, TypeORM, Eloquent, REST API design, background workers &amp; job queues, state machines, webhooks, idempotency &amp; retry design, WebSockets/Socket.io</div>
+	<div><b>Databases:</b> PostgreSQL, Supabase, Row Level Security, MySQL, MongoDB, SQLite, multi-tenant schema design, indexing, query optimization, ledger systems</div>
+	<div><b>AI &amp; ML:</b> OpenAI API, LangChain, RAG pipelines, LLM fine-tuning, prompt engineering, multi-step agents, AI usage metering &amp; cost control, content-safety guardrails</div>
+	<div><b>Payments &amp; Integrations:</b> Stripe &amp; Stripe Connect, Authorize.Net, commissions &amp; payouts, SEMrush, DataForSEO, WordPress REST, Google Analytics, Twilio, WhatsApp, Resend, Postmark, Zoom SDK, Daily.co, AWS S3</div>
+	<div><b>Auth &amp; Security:</b> Supabase Auth, Laravel Sanctum, OAuth 2.0, JWT (jose), 2FA/OTP, RBAC, session middleware, Helmet/CORS, HTML sanitization, audit trails</div>
+	<div><b>Cloud &amp; DevOps:</b> Docker, Docker Compose, Nginx, Cloudflare, Coolify, DigitalOcean, AWS, Vercel, Render, PM2, CI/CD, Git/GitHub, npm-workspaces monorepos</div>
+	<div><b>Testing &amp; Data:</b> Playwright, Vitest, Jest, Node test runner, regression &amp; contract suites, SheetJS, ExcelJS, jsPDF, PDF/DOCX ingestion, Sharp</div>
+	<div><b>Professional:</b> Client requirement gathering, milestone-based delivery &amp; sign-off, technical documentation, scope &amp; roadmap authoring, end-to-end solo technical ownership</div>
+</div>
+
+<h2>Education</h2>
+<div class="entry">
+	<div class="row"><span class="org">FAST National University</span><span>Islamabad, Pakistan</span></div>
+	<div class="row sub"><span>BS Computer Science</span><span>Graduated 2026</span></div>
+</div>
+<div class="entry">
+	<div class="row"><span class="org">The City School — Jinnah Campus</span><span>Hyderabad, Pakistan</span></div>
+	<div class="row sub"><span>A Levels — Physics, Chemistry, Mathematics</span><span>2 A*, 1 A</span></div>
+</div>
+</body>
+</html>
